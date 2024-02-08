@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="search">
+            <input type="text" placeholder="Enter the city name" onkeydown="handleKeyPress(event)"spellcheck="false">
+           <button><img src="images/search.png" alt=""></button>
+        </div>
+        <div class="error">
+            <p>Invalid City Name</p>
+        </div>
+
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+        <div class="details">
+            <div class="humid col">
+                 <img src="images/humid2.svg" alt="">
+                 <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+                <div class="wiind col">
+                    <img src="https://media.giphy.com/media/IBnHwUOpsXxmGPVAMC/giphy.gif" alt="">
+                    <div>
+                        <p class="wind">15Km/hr</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="pressure-box col">
+                    <img src="images/pressure-alt-svgrepo-com.svg" alt="">
+                    <div class="pressureText">
+                        <p class="pressure">15hPa</p>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+                <div class="maxmin-temp col">
+                    <img src="images/temperature-feels-like-svgrepo-com.svg" alt="">
+                    
+                    <div class="feelText"><p class="feelsLike">50°C</p>
+                    <p class="name">Feels Like</p>
+                    </div> 
+                    
+               </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
